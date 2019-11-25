@@ -25,6 +25,7 @@ data_set <- cbind(DateTime, data_set)
 data_set$DateTime <- as.POSIXct(DateTime)
 
 ## Contruct plot (480pxl by 480pxl) and save file as PNG.
+
 png("plot1.png", height = 480, width = 480)
 hist(data_set$Global_active_power, main="Global Active Power", xlab = "Global Active Power (kilowatts)", col="red")
 dev.off()
